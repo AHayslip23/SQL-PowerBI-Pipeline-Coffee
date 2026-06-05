@@ -86,3 +86,14 @@ UPDATE coffeesales
 SET price_per_unit = total_spent / quantity 
 WHERE price_per_unit is null;
 
+SELECT * FROM coffeesales
+WHERE quantity is null;
+
+DELETE FROM coffeesales
+WHERE quantity is null;
+
+SELECT * FROM coffeesales
+WHERE price_per_unit is null;
+
+DELETE FROM coffeesales
+WHERE price_per_unit is null;
